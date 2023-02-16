@@ -17,6 +17,7 @@ public class Customer {
     setUsername(username);
     setPassword(password);
     setAccountId(accountId);
+    setAuthenticated(false);
 
   }
 
@@ -63,10 +64,6 @@ public class Customer {
 
 
   public boolean isAuthenticated() {
-    return this.authenticated;
-  }
-
-  public boolean getAuthenticated() {
     return this.authenticated;
   }
 

@@ -12,12 +12,18 @@ public class Authenticator {
     }
 
     if(password.equals(customer.getPassword())){
+      customer.setAuthenticated(true);
+      return customer;
 
     }
+    else throw new LoginException("Incorrect Password");
+
+    
 
   }
 
   public static void logout(Customer customer){
+    customer.setAuthenticated(false);
 
   }
   
